@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "**/*.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/implementacao",
+      "dest": "/implementacao/index.html"
+    },
+    {
+      "src": "/playbook",
+      "dest": "/playbook/index.html"
+    },
+    {
+      "src": "/lead-contrato",
+      "dest": "/lead-contrato/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
+      ]
+    }
+  ]
+}
