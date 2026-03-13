@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Atendimento Magnético Playbook</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        h2 { color: #2E8B57; }
+        .expandable { display: none; padding-left: 20px; }
+        .toggle { cursor: pointer; color: #007BFF; }
+    </style>
+    <script>
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            section.style.display = (section.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+</head>
+<body>
+    <h1>Atendimento Magnético Playbook</h1>
+
+    <h2 class="toggle" onclick="toggleSection('contato')">1. Primeiro Contato</h2>
+    <div id="contato" class="expandable">
+        <p>Scripts for initial contact via WhatsApp...</p>
+    </div>
+
+    <h2 class="toggle" onclick="toggleSection('qualificacao')">2. Qualificação</h2>
+    <div id="qualificacao" class="expandable">
+        <p>Qualifying questions and processes...</p>
+    </div>
+
+    <h2 class="toggle" onclick="toggleSection('documentacao')">3. Documentação</h2>
+    <div id="documentacao" class="expandable">
+        <p>Required documentation and procedures...</p>
+    </div>
+
+    <h2 class="toggle" onclick="toggleSection('agendamento')">4. Agendamento</h2>
+    <div id="agendamento" class="expandable">
+        <p>Scheduling procedures and scripts...</p>
+    </div>
+
+    <h2 class="toggle" onclick="toggleSection('followups')">5. Follow-ups</h2>
+    <div id="followups" class="expandable">
+        <p>Follow-up procedures and timings...</p>
+    </div>
+
+    <h2 class="toggle" onclick="toggleSection('encerramentos')">6. Encerramentos</h2>
+    <div id="encerramentos" class="expandable">
+        <p>Closing procedures and documentation...</p>
+    </div>
+
+    <h2 class="toggle" onclick="toggleSection('contratos')">7. Contratos Fechados</h2>
+    <div id="contratos" class="expandable">
+        <p>Final contract details and processes...</p>
+    </div>
+
+    <h2>FAQ</h2>
+    <p>Frequently asked questions...</p>
+
+    <h2>Links</h2>
+    <p><a href="https://link-to-implementacao-express.com">Implementação Express</a></p>
+</body>
+</html>
