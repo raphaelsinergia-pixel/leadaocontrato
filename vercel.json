@@ -1,1 +1,18 @@
-{\n  "routes": [\n    {\n      "src": "/implementacao/(.*)",\n      "dest": "/implementacao/$1"\n    },\n    {\n      "src": "/playbook/(.*)",\n      "dest": "/playbook/$1"\n    },\n    {\n      "src": "/lead-contrato/(.*)",\n      "dest": "/lead-contrato/$1"\n    }\n  ]\n}
+{
+  "buildCommand": "echo 'Static site - no build needed'",
+  "outputDirectory": ".",
+  "rewrites": [
+    {
+      "source": "/implementacao/:path*",
+      "destination": "/implementacao/index.html"
+    },
+    {
+      "source": "/playbook/:path*",
+      "destination": "/playbook/index.html"
+    },
+    {
+      "source": "/lead-contrato/:path*",
+      "destination": "/lead-contrato/index.html"
+    }
+  ]
+}
