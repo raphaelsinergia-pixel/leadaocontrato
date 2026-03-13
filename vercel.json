@@ -1,0 +1,1 @@
+{\n  "routes": [\n    {\n      "src": "/implementacao/(.*)",\n      "dest": "/implementacao/$1"\n    },\n    {\n      "src": "/playbook/(.*)",\n      "dest": "/playbook/$1"\n    },\n    {\n      "src": "/lead-contrato/(.*)",\n      "dest": "/lead-contrato/$1"\n    }\n  ]\n}
